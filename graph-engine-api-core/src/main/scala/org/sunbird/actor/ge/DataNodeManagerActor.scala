@@ -26,11 +26,12 @@ object DataNodeManagerActor extends BaseAPIActor {
     val objectType = "teacher";
     val body = getRequestBody(apiRequest);
     val teacherMap =body.request.getOrElse(objectType, Map()).asInstanceOf[Map[String, AnyRef]];
+    ""
 
   }
 
   private def readDataNode(apiRequest: Request): String = {
-
+    ""
   }
 
 }
