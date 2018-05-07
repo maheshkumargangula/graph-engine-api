@@ -1,0 +1,8 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+GET	/health                                     @controllers.Application.checkAPIhealth
+
+POST /v1/definition/save                        @controllers.Application.saveDefinition
+GET /v1/definition/read/:objectType             @controllers.Application.readDefinition(objectType: String)
